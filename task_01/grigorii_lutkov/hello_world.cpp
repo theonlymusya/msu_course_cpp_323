@@ -1,6 +1,11 @@
 #include <stdexcept>
+#include <iostream>
 
-int main() {
-  throw std::runtime_error("Test");
-  return 0;
+struct some_struct { int x; };
+
+int main()
+{
+
+    auto s = some_struct();
+    return 0; // success
 }
