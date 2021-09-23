@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdexcept>
 
-struct some_struct {
+struct SomeStruct {
   int x;
 };
 
@@ -10,6 +10,7 @@ void test_func() {
 }
 
 int main() {
-  auto s = some_struct();
+  const auto s = SomeStruct();
+  test_func();
   return 0;  // success
 }
