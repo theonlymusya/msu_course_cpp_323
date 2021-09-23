@@ -1,11 +1,15 @@
-#include <stdexcept>
 #include <iostream>
+#include <stdexcept>
 
-struct some_struct { int x; };
+struct some_struct {
+  int x;
+};
 
-int main()
-{
+void test_func() {
+  return;
+}
 
-    auto s = some_struct();
-    return 0; // success
+int main() {
+  auto s = some_struct();
+  return 0;  // success
 }
